@@ -503,24 +503,28 @@
                                         document.addEventListener('DOMContentLoaded', function () {
                                             const buttons = document.querySelectorAll('#left-section .scroll-btn');
                                             const imageContainer = document.getElementById('left-image-container');
-
-                                            // Set the default background image
-                                            imageContainer.style.backgroundImage = `url('${buttons[0].getAttribute('data-image')}')`;
-
+                                        
+                                            if (buttons.length > 0) {
+                                                // Set the first button as active and the default background image
+                                                buttons[0].classList.add('active');
+                                                imageContainer.style.backgroundImage = `url('${buttons[0].getAttribute('data-image')}')`;
+                                            }
+                                        
                                             buttons.forEach(button => {
                                                 button.addEventListener('click', function () {
                                                     // Remove active class from all buttons
                                                     buttons.forEach(btn => btn.classList.remove('active'));
-
+                                        
                                                     // Add active class to the clicked button
                                                     button.classList.add('active');
-
+                                        
                                                     // Change the background image based on the data-image attribute
                                                     const imageUrl = button.getAttribute('data-image');
                                                     imageContainer.style.backgroundImage = `url('${imageUrl}')`;
                                                 });
                                             });
                                         });
+                                        
                                     </script>
                                 </div>
 
@@ -582,24 +586,28 @@
                                     document.addEventListener('DOMContentLoaded', function () {
                                         const buttons = document.querySelectorAll('#right-section .scroll-btn');
                                         const imageContainer = document.getElementById('right-image-container');
-
-                                        // Set the default background image
-                                        imageContainer.style.backgroundImage = `url('${buttons[0].getAttribute('data-image')}')`;
-
+                                    
+                                        if (buttons.length > 0) {
+                                            // Set the first button as active and the default background image
+                                            buttons[0].classList.add('active');
+                                            imageContainer.style.backgroundImage = `url('${buttons[0].getAttribute('data-image')}')`;
+                                        }
+                                    
                                         buttons.forEach(button => {
                                             button.addEventListener('click', function () {
                                                 // Remove active class from all buttons
                                                 buttons.forEach(btn => btn.classList.remove('active'));
-
+                                    
                                                 // Add active class to the clicked button
                                                 button.classList.add('active');
-
+                                    
                                                 // Change the background image based on the data-image attribute
                                                 const imageUrl = button.getAttribute('data-image');
                                                 imageContainer.style.backgroundImage = `url('${imageUrl}')`;
                                             });
                                         });
                                     });
+                                    
                                 </script>
 
 
@@ -726,7 +734,7 @@
                         </div>
                     </div>
                     <div class="warrenty-parts">
-                        <div class="warrenty-logo">
+                        <div class="warrenty-logo" >
                             <img src="./assets/customer-support.png" alt="">
                         </div>
                         <div class="warrenty-contain">

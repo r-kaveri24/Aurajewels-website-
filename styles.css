@@ -432,6 +432,7 @@ h1 {
     background: white;
     display: flex;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .content .cards .right {
@@ -440,6 +441,7 @@ h1 {
     background: white;
     display: flex;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .cards .inner-card {
@@ -448,6 +450,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 2%;
 }
 
 .cards .inner-card .container {
@@ -468,7 +471,6 @@ h1 {
 .container .content .img {
     width: 40.4%;
     height: 100%;
-    background-color: red;
     border-radius: 2%;
     display: flex;
     flex-direction: column;
@@ -577,7 +579,7 @@ h1 {
 
 .arrival-scroll {
     width: 100.25px;
-    height: 100%;
+    height: 11.25px;
     align-self: start;
     display: flex;
     gap: 6.25px;
@@ -589,16 +591,16 @@ h1 {
 }
 
 .arrival-scroll .scroll-btn {
-    height: 11.25px;
+    height: 100%;
     width: 11.25px;
     border-radius: 50%;
     display: flex;
-    background: #EAE5D7;
+    background: #bbbbbb;
     border: none;
 }
 
 .arrival-scroll button.active {
-    background-color: #BBBBBB;
+    background-color: #5A1F8B;
 }
 
 
@@ -793,14 +795,16 @@ h1 {
 }
 
 .warrenty-section {
-    width: 85%;
+    width: 80%;
     height: 37.5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 10%;
 }
 
 .warrenty-parts {
-    width: 22.1%;
+    flex: 1;
     height: 100%;
     display: flex;
     gap: 10px;
@@ -808,12 +812,12 @@ h1 {
 
 .warrenty-logo {
     height: 100%;
-    width: 21.51%;
-
+    width: max-content;
 }
 
 .warrenty-contain {
     height: 78.49%;
+    width: max-content;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1034,17 +1038,17 @@ h1 {
 }
 
 .testimonials-buttons {
-    width: 20%;
-    height: 3%;
+    width: 104px;
+    height: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15%;
+    gap: 11px;
 }
 
 .testimonials-buttons label {
-    width: 7%;
-    height: 55%;
+    width: 8px;
+    height: 8px;
     background-color: #767676;
     border-radius: 50%;
     box-shadow: none;
@@ -1054,46 +1058,46 @@ h1 {
 
 .testimonials-buttons label.active {
     background-color: #5A1F8B;
-    width: 11%;
-    height: 100%;
+    width: 16px;
+    height: 16px;
 }
 
 #testimonials-one:checked~.testimonials-buttons label.testimonials-one {
     background-color: #5A1F8B;
-    width: 11%;
-    height: 100%;
+    width: 16px;
+    height: 16px;
 }
 
 #testimonials-two:checked~.testimonials-buttons label.testimonials-two {
     background-color: #5A1F8B;
-    width: 11%;
-    height: 100%;
+    width: 16px;
+    height: 16px;
 }
 
 #testimonials-three:checked~.testimonials-buttons label.testimonials-three {
     background-color: #5A1F8B;
-    width: 11%;
-    height: 100%;
+    width: 16px;
+    height: 16px;
 }
 
 #testimonials-four:checked~.testimonials-buttons label.testimonials-four {
     background-color: #5A1F8B;
-    width: 11%;
-    height: 100%;
+    width: 16px;
+    height: 16px;
 }
 
 #testimonials-five:checked~.testimonials-buttons label.testimonials-five {
     background-color: #5A1F8B;
-    width: 11%;
-    height: 100%;
+    width: 16px;
+    height: 16px;
 }
 
 #testimonials-one:checked~.testimonials-buttons label.testimonials-two,
 label.testimonials-three,
 label.testimonials-four,
 label.testimonials-five {
-    width: 7%;
-    height: 55%;
+    width: 8px;
+    height: 8px;
     background-color: #767676;
     border-radius: 50%;
 }
@@ -1102,8 +1106,8 @@ label.testimonials-five {
 label.testimonials-three,
 label.testimonials-four,
 label.testimonials-five {
-    width: 7%;
-    height: 55%;
+    width: 8px;
+    height: 8px;
     background-color: #767676;
     border-radius: 50%;
 }
@@ -1112,8 +1116,8 @@ label.testimonials-five {
 label.testimonials-one,
 label.testimonials-four,
 label.testimonials-five {
-    width: 7%;
-    height: 55%;
+    width: 8px;
+    height: 8px;
     background-color: #767676;
     border-radius: 50%;
 }
@@ -1122,8 +1126,8 @@ label.testimonials-five {
 label.testimonials-three,
 label.testimonials-one,
 label.testimonials-five {
-    width: 7%;
-    height: 55%;
+    width: 8px;
+    height: 8px;
     background-color: #767676;
     border-radius: 50%;
 }
@@ -1132,8 +1136,8 @@ label.testimonials-five {
 label.testimonials-three,
 label.testimonials-four,
 label.testimonials-one {
-    width: 7%;
-    height: 55%;
+    width: 8px;
+    height: 8px;
     background-color: #767676;
     border-radius: 50%;
 }
