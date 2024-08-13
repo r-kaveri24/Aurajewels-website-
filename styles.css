@@ -589,7 +589,7 @@ h1 {
 }
 
 .arrival-scroll .scroll-btn {
-    height: 100%;
+    height: 11.25px;
     width: 11.25px;
     border-radius: 50%;
     display: flex;
